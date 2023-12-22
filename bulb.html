@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Button Dynamically with Counting</title>
+</head>
+<body>
+    <!-- Your content here -->
+
+    <!-- Script to create a button dynamically with counting -->
+    <script>
+        // Initialize the counter
+        var clickCount = 0;
+
+        // Create a button element
+        var button = document.createElement("button");
+
+        // Set button text
+        button.innerHTML = "Click me";
+
+        // Set button id (optional)
+        button.id = "myButton";
+
+        // Set button click event
+        button.addEventListener("click", function() {
+            // Increment the counter
+            clickCount++;
+
+            // Update button text with the count
+            button.innerHTML = "Click me " + clickCount + "";
+        });
+
+        // Append the button to the document body
+        document.body.appendChild(button);
+    </script>
+</body>
+</html>
